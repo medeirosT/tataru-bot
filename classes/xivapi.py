@@ -26,7 +26,6 @@ class XIVAPI:
             url = self.SEARCH_URL.format(serialized_name=serialized_name)
             response = requests.get(url)
             response.raise_for_status()
-            print(f"[XIVAPI][item_search] Response: {response.json()}")
             return response.json()
         except requests.RequestException as e:
             print(f"[item_search] Error fetching item from XIVAPI: {e}")
