@@ -70,6 +70,13 @@ Code isn't perfect, but it's functional and I'm proud of it.
     ```
     !recipe 12056
     ```
+    
+5. **Manually update an emoji for an item ID:**
+    ```
+    !setemoji 10335 🪨
+    ```
+    
+    
 
 ## Why Tataru?
 
