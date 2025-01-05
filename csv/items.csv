@@ -1,0 +1,67 @@
+item_name,item_id,emoji,category,icon_url
+Lesser Panda,12056,🐾,Minions,https://beta.xivapi.com/api/1/asset/ui/icon/059000/059534.tex?format=png
+Lesser Apollyon Shell,44069,⚗️,Reagents,https://beta.xivapi.com/api/1/asset/ui/icon/022000/022257.tex?format=png
+Lesser Pillar of Tural,44931,🏠,Outdoor Furnishings,https://beta.xivapi.com/api/1/asset/ui/icon/053000/053707.tex?format=png
+Linen Yarn,5336,🧵,Cloth,https://beta.xivapi.com/api/1/asset/ui/icon/021000/021659.tex?format=png
+Dated Hempen Beret (Grey),387,👒,Head,https://xivapi.com/i/041000/041003.png
+Rarefied Cedar Fishing Rod,30971,🛒,Miscellany,https://xivapi.com/i/038000/038218.png
+Bright Linen Yarn,27746,🧵,Cloth,https://beta.xivapi.com/api/1/asset/ui/icon/021000/021659.tex?format=png
+Dated Darksilver Circlet (Amethyst),587,👒,Head,https://xivapi.com/i/040000/040598.png
+Flax,5346,🧵,Cloth,https://xivapi.com/i/021000/021651.png
+Ra'Kaznar Gloves of Scouting,42496,👐,Hands,https://beta.xivapi.com/api/1/asset/ui/icon/056000/056193.tex?format=png
+Ra'Kaznar Ingot,44001,🧱,Metal,https://xivapi.com/i/021000/021020.png
+Thunderyards Silk,44033,🧵,Cloth,https://xivapi.com/i/021000/021622.png
+White Gold Ingot,44011,🧱,Metal,https://xivapi.com/i/020000/020814.png
+Grade 1 Gemsap of Dexterity,44045,❓,Reagent,https://xivapi.com/i/022000/022682.png
+Ice Crystal,9,🔮,Crystal,https://xivapi.com/i/020000/020009.png
+Earth Crystal,11,🔮,Crystal,https://xivapi.com/i/020000/020012.png
+Water Rock,5157,🪨,Stone,https://beta.xivapi.com/api/1/asset/ui/icon/021000/021451.tex?format=png
+Felt Gloves,27680,👐,Hands,https://beta.xivapi.com/api/1/asset/ui/icon/044000/044737.tex?format=png
+Undyed Felt,5329,🧵,Cloth,https://xivapi.com/i/021000/021607.png
+Woolen Yarn,5337,🧵,Cloth,https://xivapi.com/i/021000/021660.png
+Lightning Shard,6,🔮,Crystal,https://xivapi.com/i/020000/020005.png
+Wind Shard,4,🔮,Crystal,https://xivapi.com/i/020000/020004.png
+Ra'Kaznar Ore,43996,🪨,Stone,https://xivapi.com/i/021000/021231.png
+Magnesia Powder,44007,🪨,Stone,https://xivapi.com/i/021000/021204.png
+Fire Crystal,8,🔮,Crystal,https://xivapi.com/i/020000/020007.png
+Levinsilk,44028,🧵,Cloth,https://xivapi.com/i/021000/021687.png
+Lightning Crystal,12,🔮,Crystal,https://xivapi.com/i/020000/020011.png
+White Gold Ore,44005,🪨,Stone,https://xivapi.com/i/021000/021217.png
+Truegold Ore,27697,🪨,Stone,https://xivapi.com/i/021000/021212.png
+Wind Crystal,10,🔮,Crystal,https://xivapi.com/i/020000/020010.png
+Ambrosial Water,36263,⚗️,Reagent,https://xivapi.com/i/022000/022693.png
+Light Gerbera,27785,⚗️,Reagent,https://xivapi.com/i/025000/025008.png
+Water Crystal,13,🔮,Crystal,https://xivapi.com/i/020000/020008.png
+Linen Cowl,3140,👕,Body,https://beta.xivapi.com/api/1/asset/ui/icon/043000/043621.tex?format=png
+Cow Bitter,12639,⚗️,Reagents,https://beta.xivapi.com/api/1/asset/ui/icon/025000/025028.tex?format=png
+Hempen Cowl,3000,👕,Body,https://beta.xivapi.com/api/1/asset/ui/icon/043000/043601.tex?format=png
+Cotton Cowl,3024,👕,Body,https://beta.xivapi.com/api/1/asset/ui/icon/043000/043610.tex?format=png
+Woolen Cowl,3193,👕,Body,https://beta.xivapi.com/api/1/asset/ui/icon/043000/043622.tex?format=png
+Velveteen Cowl,3090,👕,Body,https://beta.xivapi.com/api/1/asset/ui/icon/043000/043615.tex?format=png
+Altered Linen Cowl,27673,👕,Body,https://beta.xivapi.com/api/1/asset/ui/icon/043000/043889.tex?format=png
+Altered Woolen Cowl,27677,👕,Body,https://beta.xivapi.com/api/1/asset/ui/icon/043000/043906.tex?format=png
+Undyed Cotton Cloth,5325,🧵,Cloth,https://xivapi.com/i/021000/021602.png
+Undyed Hempen Cloth,5324,🧵,Cloth,https://xivapi.com/i/021000/021601.png
+Cotton Yarn,5334,🧵,Cloth,https://xivapi.com/i/021000/021656.png
+Cotton Boll,5343,🧵,Cloth,https://xivapi.com/i/021000/021652.png
+Hempen Yarn,5333,🧵,Cloth,https://xivapi.com/i/021000/021658.png
+Moko Grass,5341,🧵,Cloth,https://xivapi.com/i/021000/021654.png
+Fire Shard,2,🔮,Crystal,https://xivapi.com/i/020000/020001.png
+Seacloth,31091,🧵,Cloth,https://beta.xivapi.com/api/1/asset/ui/icon/021000/021612.tex?format=png
+Crystalfin,12779,🍣,Seafood,https://beta.xivapi.com/api/1/asset/ui/icon/029000/029256.tex?format=png
+Dark Matter Cluster,10335,🪨,Catalyst,https://xivapi.com/i/020000/020407.png
+Windswept Barding,38440,🃏,Registrable Miscellany,https://beta.xivapi.com/api/1/asset/ui/icon/058000/058770.tex?format=png
+Pearl of Winds,38675,🪨,Stone,https://xivapi.com/i/026000/026534.png
+Golden Silk,36213,🧵,Cloth,https://xivapi.com/i/021000/021623.png
+Amynodon Leather,36252,💼,Leather,https://xivapi.com/i/022000/022009.png
+Chondrite Ingot,36172,🧱,Metal,https://xivapi.com/i/020000/020830.png
+Earth Cluster,17,🔮,Crystal,https://xivapi.com/i/020000/020018.png
+Wind Cluster,16,🔮,Crystal,https://xivapi.com/i/020000/020016.png
+Golden Cocoon,36207,🧵,Cloth,https://xivapi.com/i/021000/021682.png
+Thavnairian Thread,36221,🧵,Cloth,https://xivapi.com/i/021000/021669.png
+Lightning Cluster,18,🔮,Crystal,https://xivapi.com/i/020000/020017.png
+Amynodon Hide,36222,💼,Leather,https://xivapi.com/i/021000/021811.png
+Rime Dolomite,36216,🪨,Stone,https://xivapi.com/i/021000/021225.png
+Chondrite,36166,🪨,Stone,https://xivapi.com/i/021000/021243.png
+Dimythrite Ore,27703,🪨,Stone,https://xivapi.com/i/021000/021208.png
+Platinum Ore,5120,🪨,Stone,https://beta.xivapi.com/api/1/asset/ui/icon/021000/021213.tex?format=png
