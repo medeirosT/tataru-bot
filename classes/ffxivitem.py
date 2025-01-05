@@ -119,92 +119,75 @@ class FFXIVItem:
 
         category_name = category_name.lower()
 
-        if category_name == "minions":
-            return "🐾"
-        elif category_name == "wall-mounted" or category_name == "paintings":
-            return "🖼️"
-        elif category_name == "body":
-            return "👕"
-        elif category_name == "interior fixtures" or category_name == "outdoor furnishings" or category_name == "exterior fixtures":
-            return "🏠"
-        elif category_name == "materia":
-            return "🔴"
-        elif category_name == "crafting material":
-            return "🛠️"
-        elif category_name == "rings":
-            return "💍"
-        elif category_name == "consumable":
-            return "🍴"
-        elif category_name == "furnishings" or category_name == "tabletop" or category_name == "rugs" or category_name == "tables":
-            return "🛋️"
-        elif category_name == "weapon" or category_name == "weapon parts":
-            return "⚔️"
-        elif category_name == "armor" or category_name == "armor parts" or category_name == "shields":
-            return "🛡️"
-        elif category_name == "tools" or "'s tools" in category_name:
+        emoji_map = {
+            "minions": "🐾",
+            "wall-mounted": "🖼️",
+            "paintings": "🖼️",
+            "body": "👕",
+            "interior fixtures": "🏠",
+            "outdoor furnishings": "🏠",
+            "exterior fixtures": "🏠",
+            "materia": "🔴",
+            "crafting material": "🛠️",
+            "rings": "💍",
+            "consumable": "🍴",
+            "furnishings": "🛋️",
+            "tabletop": "🛋️",
+            "rugs": "🛋️",
+            "tables": "🛋️",
+            "weapon": "⚔️",
+            "weapon parts": "⚔️",
+            "armor": "🛡️",
+            "armor parts": "🛡️",
+            "shields": "🛡️",
+            "seafood": "🍣",
+            "fish": "🐟",
+            "gardening items": "🌱",
+            "dyes": "🎨",
+            "mount": "🐴",
+            "orchestrion roll": "🎵",
+            "mineral": "⛏️",
+            "stone": "🪨",
+            "metal": "🧱",
+            "chairs and beds": "🛏️",
+            "leather": "💼",
+            "meals": "🍱",
+            "cloth": "🧵",
+            "cloths": "🧵",
+            "heads": "👒",
+            "head": "👒",
+            "hands": "👐",
+            "hand": "👐",
+            "legs": "👖",
+            "bone": "🦴",
+            "bones": "🦴",
+            "feet": "👠",
+            "bracelets": "💍",
+            "bracelet": "💍",
+            "earrings": "💍",
+            "earring": "💍",
+            "necklaces": "📿",
+            "lumber": "🪵",
+            "registrable miscellany": "🃏",
+            "fishing tackle": "🎣",
+            "orchestrion components": "🎵",
+            "miscellany": "🛒",
+            "miscellaneous": "❓"
+        }
+
+        # Check for specific conditions
+        if "'s tools" in category_name:
             return "🔧"
-        elif category_name == "seafood":
-            return "🍣"
-        elif category_name == "fish":
-            return "🐟"
-        elif category_name == "ingredients":
-            return "🥕"
-        elif category_name == "gardening items":
-            return "🌱"
-        elif category_name == "dyes":
-            return "🎨"
-        elif category_name == "mount":
-            return "🐴"
-        elif category_name == "orchestrion roll":
-            return "🎵"
-        elif category_name == "mineral":
-            return "⛏️"
-        elif category_name.startswith("reagent") or category_name == "medicine":
-            return "⚗️"
-        elif category_name == "stone" or category_name.startswith("catalyst"):
-            return "🪨"
-        elif category_name == "metal":
-            return "🧱"
-        elif category_name == "chairs and beds":
-            return "🛏️"
-        elif category_name == "leather":
-            return "💼"
-        elif category_name == "tables":
-            return "🪑"
-        elif category_name == "meals":
-            return "🍱"
-        elif category_name == "cloth" or category_name == "cloths":
-            return "🧵"
-        elif category_name == "heads" or category_name == "head":
-            return "👒"
-        elif category_name == "hands" or category_name == "hand":
-            return "👐"
-        elif category_name == "legs":
-            return "👖"
-        elif category_name == "bone" or category_name == "bones":
-            return "🦴"
-        elif category_name == "feet":
-            return "👠"
-        elif category_name == "bracelets" or category_name == "bracelet" or category_name == "earrings" or category_name == "earring":
-            return "💍"
-        elif category_name == "necklaces":
-            return "📿"
-        elif category_name == "lumber":
-            return "🪵"
-        elif category_name == "registrable miscellany":
-            return "🃏"
         elif "'s arms" in category_name:
             return "⚔️"
+        elif category_name.startswith("ingredients"):
+            return "🥕"
+        elif category_name.startswith("reagent") or category_name == "medicine":
+            return "⚗️"
+        elif category_name.startswith("catalyst"):
+            return "🪨"
         elif category_name.startswith("crystal"):
             return "🔮"
-        elif category_name == "fishing tackle":
-            return "🎣"
-        elif category_name == "orchestrion components":
-            return "🎵"
-        elif category_name == "miscellany" or category_name == "miscellany":
-            return "🛒"
-        elif category_name == "miscellaneous":
-            return "❓"
-        else:
-            print("Could not find emoji for item type: ", category_name)
-            return "❓"
+
+        # Return emoji from map or default
+        return emoji_map.get(category_name, "❓")
