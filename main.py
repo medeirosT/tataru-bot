@@ -560,7 +560,7 @@ async def handle_setemoji_command(message: discord.Message) -> None:
         # Set the new emoji
         ffxiv_item.emoji = emoji
         # Update the item in CSVDB
-        csvdb.update_item(ffxiv_item)
+        csvdb.update(ffxiv_item)
     else:
         # Inform the user if the item_id is not found in the database
         await message.channel.send("Item ID not found on the database. Maybe search its price first so I can add it?")
