@@ -40,9 +40,9 @@ Code isn't perfect, but it's functional and I'm proud of it.
     pip3 install -r requirements.txt
     ```
 
-3. edit main.py and add your discord bot token and channel id, as well as the role id you want to give to the users that use the bot.
+3. Edit main.py and add your discord bot token and channel id, as well as the role id you want to give to the users that use the bot.
 
-4. run the bot:
+4. Run the bot:
     ```sh
     python3 bot.py
     ```
