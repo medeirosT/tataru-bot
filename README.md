@@ -76,10 +76,13 @@ Code isn't perfect, but it's functional and I'm proud of it.
     !setemoji 10335 🪨
     ```
     
-    
-
 ## Why Tataru?
 
 If you played FFXIV, you'll know her entrepreneurial spirit. That's what inspired the name.
 
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/5093a6f6-1fde-4e90-b153-a9f8e612c5a5)
+![image](https://github.com/user-attachments/assets/460e509a-47db-4f8e-afac-83f1584e59d2)
+![image](https://github.com/user-attachments/assets/0cee5ca4-2cd3-46cb-b9af-c8c19e3a9814)
 
