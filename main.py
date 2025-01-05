@@ -31,6 +31,7 @@ import requests
 from datetime import datetime
 from typing import Optional
 from classes.recipe import Recipe
+import configparser
 
 
 # Bot setup with Python 3 type hints
@@ -39,10 +40,22 @@ intents.voice_states = False
 intents.message_content = True  # Need this for sending messages
 bot: commands.Bot = commands.Bot(command_prefix='!', intents=intents)
 
-# Channel ID where messages will be sent
-ROLE_ID:        int = <ROLE ID HERE>  # Configureable role ID
-SERVER_NAME:    str = "<SERVER NAME HERE>"
-TOKEN:          str = "<TOKEN HERE>"
+# Configuration variables loaded from config.ini
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+
+# The role ID for the Discord bot to use
+ROLE_ID:        int = config['discord']['role_id'] 
+
+# The name of the FFXIV server
+SERVER_NAME:    str = config['ffxiv']['server']         
+
+# The token for the Discord bot
+TOKEN:          str = config['discord']['token']
+
+
+
 
 # Initialize CSVDB and Recipe
 csvdb = CSVDB()
@@ -408,7 +421,8 @@ async def handle_price_command(message: discord.Message, item_id: Optional[int] 
     """
     # Assign item_id to query if item_id is set, otherwise extract the query from the message
     query = str(item_id) if item_id is not None else message.content[6:].strip()
-    
+    fuzzy = False
+
     # Check if the user has the required role
     if user:
         if not any(role.id == ROLE_ID for role in user.roles):
@@ -618,15 +632,15 @@ async def on_reaction_add(reaction, user):
 
 
 def main():
-   
     try:
         # Attempt to run the bot with the provided token
-        bot.run(TOKEN)  # Replace with your bot token
+        bot.run(TOKEN)
     except discord.LoginFailure:
         # Handle the case where the provided token is invalid
         print("[Main] Invalid token provided. Please check your bot token.")
     except Exception as e:
         # Handle any other exceptions that may occur
         print(f"[Main] An error occurred: {e}")
+
 if __name__ == "__main__":
     main()
