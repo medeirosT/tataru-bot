@@ -221,14 +221,16 @@ class CSVDB:
         """
 
         if isinstance(identifier, int):
+            print("fetching item info from xivapi by id")
             data = self.xivapi.get_item_info(identifier)
+
         else:
             data = self.xivapi.item_search(identifier)
 
-        if data and "results" in data and data["results"]:
-            data = data["results"][0]
-        else:
-            return None
+            if data and "results" in data and data["results"]:
+                data = data["results"][0]
+            else:
+                return None
 
         # Create a new FFXIVItem instance and auto-fill its information
         new_item = FFXIVItem("", 0, "", "", "")
