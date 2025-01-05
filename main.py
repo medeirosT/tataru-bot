@@ -46,7 +46,7 @@ config.read('config.ini')
 
 
 # The role ID for the Discord bot to use
-ROLE_ID:        int = config['discord']['role_id'] 
+ROLE_ID: int = config.getint('discord', 'role_id')
 
 # The name of the FFXIV server
 SERVER_NAME:    str = config['ffxiv']['server']         
@@ -423,12 +423,14 @@ async def handle_price_command(message: discord.Message, item_id: Optional[int] 
     query = str(item_id) if item_id is not None else message.content[6:].strip()
     fuzzy = False
 
+
     # Check if the user has the required role
     if user:
         if not any(role.id == ROLE_ID for role in user.roles):
             await message.channel.send("You do not have permission to use this command.")
             return
     else:
+        
         if not any(role.id == ROLE_ID for role in message.author.roles):
             await message.channel.send("You do not have permission to use this command.")
             return
