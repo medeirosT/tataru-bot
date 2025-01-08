@@ -365,6 +365,7 @@ class Tataru:
                 world_info = f":coin:{int(nq_data['world']['price']):,} gil"
                 if has_hq_data and 'world' in hq_data:
                     world_info += f" / :sparkles:{int(hq_data['world']['price']):,} gil"
+                world_info += f" `({self.SERVER_NAME})`"
 
             datacenter_info = f":coin:{int(nq_data['dc']['price']):,} gil `({self.csvdb.search_world_by_id(nq_data['dc']['worldId'])})`"
             region_info = f":coin:{int(nq_data['region']['price']):,} gil `({self.csvdb.search_world_by_id(nq_data['region']['worldId'])})`"
@@ -377,7 +378,7 @@ class Tataru:
             embed.add_field(name=":japan: Region", value=region_info, inline=False)
             embed.add_field(name=":office: Datacenter", value=datacenter_info, inline=False)
             if world_info:
-                embed.add_field(name=f":earth_americas: World ({self.SERVER_NAME})", value=world_info, inline=False)
+                embed.add_field(name=f":earth_americas: World", value=world_info, inline=False)
             embed.add_field(name="Links", value=f"[Gamerscape Wiki](<https://ffxiv.gamerescape.com/wiki/{ffxiv_item.item_name.replace(' ', '_')}>) | [Universalis](<https://universalis.app/market/{ffxiv_item.item_id}>) | [Garland Tools](<https://garlandtools.org/db/#item/{ffxiv_item.item_id}>)")
             embed.set_thumbnail(url=ffxiv_item.icon_url)
             embed.set_footer(text=f"Oldest update was on {lowest_world} at {formatted_time}")
